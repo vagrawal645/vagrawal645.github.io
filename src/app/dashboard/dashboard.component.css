@@ -1,0 +1,18 @@
+#maindiv{
+  background-color: white;
+  opacity: 1;
+  height: 100%;
+}
+#sidebar{
+  background-color: #000046;
+  height: 620px;
+  opacity: 0.95;
+  padding: 25px 25px;
+}
+#sidebar.div.button{
+  opacity: 1;
+  background-color: none;
+}
+button{
+  margin-left: 6px;
+}

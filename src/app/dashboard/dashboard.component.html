@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-3" id="sidebar">
+    <button class="btn btn-block btn-info btn-lg" (click) = "newRequest()" >New Request</button>
+    <button class="btn btn-block btn-warning btn-lg" (click) = "pendingRequests()">Pending Requests </button>
+    <button class="btn btn-block btn-dark btn-lg">Closed Requests </button>
+    <button class="btn btn-block btn-success btn-lg">Saved Requests </button>
+    <button class="btn btn-block btn-secondary btn-lg">All Requests </button>
+    <button class="btn btn-block btn-danger btn-lg">Cancelled Requests </button>
+  </div>
+  <div class="col-md-9" id = "maindiv">
+    <div *ngIf = "main === 'form'">
+      <app-request-form ></app-request-form >
+    </div>
+    <div *ngIf = "main === 'pending'">
+      <app-request-table ></app-request-table>
+    </div>
+  </div>
+</div>
